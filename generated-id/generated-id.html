@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generated ID</title>
+    <link rel="stylesheet" href="generated.css">
 </head>
 <body>
-    <h2>hello</h2>
+    <div class="container">
+        <div class="form">
+            <div class="upload-image">
+            <h2>Generated ID Form</h2>
+
+            <!-- Upload Picture -->
+            <label for="upload">Upload your Picture:</label>
+            <input type="file" id="upload" accept="image/*">
+            </div>
+            <!-- Select Gender -->
+             <div class="gender">
+            <label>Gender:</label>
+            <div class="gender-options">
+                <input type="radio" id="male" name="sex" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="sex" value="female">
+                <label for="female">Female</label>
+            </div>
+             </div>
+            <!-- Picture Size Selection -->
+             <div class="size-image">
+            <label for="size">Select Picture Size:</label>
+            <select id="size">
+                <option value="2x2">2x2</option>
+                <option value="1x1">1x1</option>
+                <option value="passport">Passport Size</option>
+                <option value="custom">Custom Size</option>
+            </select>
+             </div>
+            <!-- Submit Button -->
+             <div class="generate-button">
+            <button type="submit">Generate ID</button>
+             </div>
+        </div>
+    </div>
 </body>
 </html>
