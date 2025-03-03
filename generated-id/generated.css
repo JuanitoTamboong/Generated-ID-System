@@ -32,6 +32,7 @@ h2 {
     color: #333;
 }
 
+/* Upload Image Styling */
 .upload-image input {
     width: 100%;
     padding: 8px;
@@ -46,6 +47,20 @@ h2 {
     border-color: #667eea;
 }
 
+.preview {
+    margin-top: 10px;
+}
+
+.preview img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Gender Selection */
 .gender-options {
     display: flex;
     justify-content: center;
@@ -54,7 +69,6 @@ h2 {
 }
 
 .radio-label {
-    display: inline-block;
     padding: 8px 15px;
     border: 2px solid #ccc;
     border-radius: 8px;
@@ -66,12 +80,28 @@ input[type="radio"] {
     display: none;
 }
 
-input[type="radio"]:checked + .radio-label {
+input[type="radio"]:checked + label {
     background: #667eea;
     color: white;
     border-color: #667eea;
 }
 
+/* Attire Styling */
+.attire-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.attire-container img {
+    width: 120px; /* Adjusted Size */
+    height: auto;
+    border-radius: 8px;
+    display: none;
+}
+
+/* Select Styling */
 .size-image select {
     width: 100%;
     padding: 10px;

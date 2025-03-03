@@ -9,39 +9,55 @@
 <body>
     <div class="container">
         <div class="form">
-            <div class="upload-image">
             <h2>Generated ID Form</h2>
 
             <!-- Upload Picture -->
-            <label for="upload">Upload your Picture:</label>
-            <input type="file" id="upload" accept="image/*">
+            <div class="upload-image">
+                <label for="upload">Upload your Picture:</label>
+                <input type="file" id="upload" accept="image/*">
+                <div class="preview">
+                    <img id="imagePreview" src="#" alt="Uploaded Image" style="display: none;">
+                </div>
             </div>
-            <!-- Select Gender -->
-             <div class="gender">
-            <label>Gender:</label>
-            <div class="gender-options">
-                <input type="radio" id="male" name="sex" value="male">
-                <label for="male">Male</label>
 
-                <input type="radio" id="female" name="sex" value="female">
-                <label for="female">Female</label>
+            <!-- Select Gender -->
+            <div class="gender">
+                <label>Gender:</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="sex" value="male">
+                    <label for="male" class="radio-label">Male</label>
+
+                    <input type="radio" id="female" name="sex" value="female">
+                    <label for="female" class="radio-label">Female</label>
+                </div>
             </div>
-             </div>
+
+            <!-- Select Attire -->
+            <div class="select-attire">
+                <h3>Select Attire</h3>
+                <div class="attire-container">
+                    <img id="maleAttire" src="/attire-image/female-attire.png" alt="Male Attire">
+                    <img id="femaleAttire" src="/attire-image/female-attire.png" alt="Female Attire">
+                </div>
+            </div>
+
             <!-- Picture Size Selection -->
-             <div class="size-image">
-            <label for="size">Select Picture Size:</label>
-            <select id="size">
-                <option value="2x2">2x2</option>
-                <option value="1x1">1x1</option>
-                <option value="passport">Passport Size</option>
-                <option value="custom">Custom Size</option>
-            </select>
-             </div>
+            <div class="size-image">
+                <label for="size">Select Picture Size:</label>
+                <select id="size">
+                    <option value="2x2">2x2</option>
+                    <option value="1x1">1x1</option>
+                    <option value="passport">Passport Size</option>
+                    <option value="custom">Custom Size</option>
+                </select>
+            </div>
+
             <!-- Submit Button -->
-             <div class="generate-button">
-            <button type="submit">Generate ID</button>
-             </div>
+            <div class="generate-button">
+                <button type="button" id="generateBtn">Generate ID</button>
+            </div>
         </div>
     </div>
+    <script src="generated.js"></script>
 </body>
 </html>
