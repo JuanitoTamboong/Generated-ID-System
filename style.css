@@ -9,7 +9,6 @@
 }
 
 :root {
-    --primary-color: rgb(118, 115, 115);
     --button-color:#030358;
     --button-hover:#00399566;
 }
@@ -19,7 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
 .content {
@@ -28,6 +27,7 @@ body {
     align-items: center;
     text-align: center;
     width: 100%;
+    
 }
 
 .wrapper {
@@ -57,21 +57,24 @@ body {
 .wrapper p {
     font-size: 18px;
     line-height: 1.5;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .proceed-button {
     margin-top: 15px;
+    
 }
 
 .proceed-button input {
     background: var(--button-color);
     color: white;
     font-size: 18px;
-    padding: 8px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
+    padding: 10px;
+
 }
 
 .proceed-button input:hover {
