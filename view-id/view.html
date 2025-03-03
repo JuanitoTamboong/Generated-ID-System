@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Preview</title>
+    <link rel="stylesheet" href="view.css">
+</head>
+<body>
+    <div class="id-container">
+        <h2>Your Generated ID</h2>
+        <div class="id-preview">
+            <img id="finalImage" src="#" alt="Generated ID">
+        </div>
+        <button onclick="window.history.back()">Back</button>
+    </div>
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+        const finalImage = document.getElementById("finalImage");
+        const storedID = sessionStorage.getItem("generatedID");
+
+        if (storedID) {
+            finalImage.src = storedID;
+            finalImage.style.display = "block";
+        }
+    });
+    </script>
+</body>
+</html>
